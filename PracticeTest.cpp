@@ -24,6 +24,13 @@ TEST(PracticeTest, is_simple_palindrome)
 TEST(PracticeTest, is_complex_palindrome)
 {
     Practice obj;
-    bool actual = obj.isPalindrome("aaabaaaaabbcbbaaabaaaaa");
+    bool actual = obj.isPalindrome("aaabaabaaabbcbbaaabaabaaa");
     ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_not_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("hello");
+    ASSERT_FALSE(actual);
 }
