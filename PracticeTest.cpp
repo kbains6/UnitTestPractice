@@ -80,9 +80,9 @@ TEST(PracticeTest, order_is_correct_number)
     int b = 2;
     int c = 3;
     obj.sortDescending(a,b,c);
-    ASSERT_EQ(3,a); 
-    ASSERT_EQ(2,b); 
-    ASSERT_EQ(1,c);  
+    EXPECT_EQ(3,a); 
+    EXPECT_EQ(2,b); 
+    EXPECT_EQ(1,c);  
 }
 
 TEST(PracticeTest, order_is_correct_with_negative)
@@ -92,9 +92,9 @@ TEST(PracticeTest, order_is_correct_with_negative)
     int b = -2;
     int c = 1;
     obj.sortDescending(a,b,c);
-    ASSERT_EQ(3,a); 
-    ASSERT_EQ(1,b); 
-    ASSERT_EQ(-2,c);  
+    EXPECT_EQ(3,a); 
+    EXPECT_EQ(1,b); 
+    EXPECT_EQ(-2,c);  
 }
 
 /* END OF NUMBER TEST */
