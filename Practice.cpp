@@ -32,6 +32,9 @@ void Practice::sortDescending(int & first, int & second, int & third)
 // character in the string, but disregarding case ('x' is the same as 'X')
 bool Practice::isPalindrome(string input)
 {
+  if(input.size() == 0){ // empty string is not palindrome
+	return false;
+  }
   for(int i=0; i < input.size(); i++)
   {
     if( input[i] < 'A' || input[i] > 'Z' )
