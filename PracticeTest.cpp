@@ -61,6 +61,41 @@ TEST(PracticeTest, empty_is_not_palindrome)
 
 /* NUMBER TEST */
 
+TEST(PracticeTest, order_is_correct_ranking)
+{
+    Practice obj;
+    int a = 3;
+    int b = 2;
+    int c = 1;
+    obj.sortDescending(a,b,c);
+    ASSERT_LE(c,a); 
+    ASSERT_LE(b,a); 
+    ASSERT_LE(c,b);  
+}
+
+TEST(PracticeTest, order_is_correct_number)
+{
+    Practice obj;
+    int a = 1;
+    int b = 2;
+    int c = 3;
+    obj.sortDescending(a,b,c);
+    ASSERT_EQ(3,a); 
+    ASSERT_EQ(2,b); 
+    ASSERT_EQ(1,c);  
+}
+
+TEST(PracticeTest, order_is_correct_with_negative)
+{
+    Practice obj;
+    int a = 3;
+    int b = -2;
+    int c = 1;
+    obj.sortDescending(a,b,c);
+    ASSERT_EQ(3,a); 
+    ASSERT_EQ(1,b); 
+    ASSERT_EQ(-2,c);  
+}
 
 /* END OF NUMBER TEST */
 
