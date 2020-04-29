@@ -3,7 +3,8 @@ dist: xenial
 language: cpp
 
 before_install:
-  - pip install --user cpp-coveralls  - export CURRENT_PROJ_DIR=$(pwd)
+  - pip install --user cpp-coveralls  
+  - export CURRENT_PROJ_DIR=$(pwd)
   - mkdir gtest
   - cd gtest
   - git clone https://github.com/google/googletest.git
