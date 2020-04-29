@@ -97,5 +97,17 @@ TEST(PracticeTest, order_is_correct_with_negative)
     EXPECT_EQ(-2,c);  
 }
 
+TEST(PracticeTest, order_is_correct_with_first<third)
+{
+    Practice obj;
+    int a = 2;
+    int b = 1; 
+    int c = 3;
+    obj.sortDescending(a,b,c);
+    EXPECT_EQ(3,a); 
+    EXPECT_EQ(2,b); 
+    EXPECT_EQ(1,c);  
+}
+
 /* END OF NUMBER TEST */
 
