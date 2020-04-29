@@ -97,7 +97,7 @@ TEST(PracticeTest, order_is_correct_with_negative)
     EXPECT_EQ(-2,c);  
 }
 
-TEST(PracticeTest, order_is_correct_with_first<third)
+TEST(PracticeTest, order_is_correct_with_first_less_than_third)
 {
     Practice obj;
     int a = 2;
